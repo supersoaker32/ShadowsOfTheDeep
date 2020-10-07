@@ -57,7 +57,6 @@ public class PowerOn : MonoBehaviour
                 foreach (GameObject powerFeature in powerFeatures)
                 {
                     powerFeature.SetActive(true);
-
                 }
 
                 //Turn on power sounds
@@ -90,7 +89,6 @@ public class PowerOn : MonoBehaviour
             foreach (GameObject powerFeature in powerFeatures)
             {
                 powerFeature.SetActive(false);
-
             }
             if (power.isPlaying) power.Stop();
             foreach (GameObject lightning in lightningEffects)
