@@ -11,7 +11,7 @@ public class LightDetection : MonoBehaviour
     private float dInsanity = -0.003f;
     private float iSlow = 0.0005f;
     private float iQuick = 0.001f;
-    private float iVQuick = 0.002f;
+    private float iVQuick = 0.004f;
 
     private void OnTriggerStay(Collider other)
     {

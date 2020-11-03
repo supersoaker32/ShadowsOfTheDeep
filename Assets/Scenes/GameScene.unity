@@ -457,6 +457,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1818586017}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (15)
@@ -1372,6 +1376,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 11921953}
     m_Modifications:
+    - target: {fileID: 1814783361, guid: d1acda47e4c0da5438912daa94b0cda0, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 3231828985603076330, guid: d1acda47e4c0da5438912daa94b0cda0,
         type: 3}
       propertyPath: m_Name
@@ -1447,6 +1455,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1121332585}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (3)
@@ -1719,6 +1731,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 845426039}
     m_Modifications:
+    - target: {fileID: 1814783361, guid: d1acda47e4c0da5438912daa94b0cda0, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 3231828985603076330, guid: d1acda47e4c0da5438912daa94b0cda0,
         type: 3}
       propertyPath: m_Name
@@ -2975,6 +2991,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1818586017}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (4)
@@ -3194,6 +3214,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 510805325}
     m_Modifications:
+    - target: {fileID: 1814783361, guid: d1acda47e4c0da5438912daa94b0cda0, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 3231828985603076330, guid: d1acda47e4c0da5438912daa94b0cda0,
         type: 3}
       propertyPath: m_Name
@@ -3386,12 +3410,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 72464866}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 153307613}
-  m_RootOrder: 0
+  m_Father: {fileID: 1817536263}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &72464868
 MonoBehaviour:
@@ -3714,6 +3738,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1121332585}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (2)
@@ -4066,6 +4094,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 510805325}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (42)
@@ -5141,6 +5173,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2114979036}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (6)
@@ -5742,37 +5778,6 @@ Transform:
   - {fileID: 1071022239}
   m_Father: {fileID: 815410758}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &153307612
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 153307613}
-  m_Layer: 0
-  m_Name: TriggerBoxes
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &153307613
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 153307612}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 72464867}
-  m_Father: {fileID: 1817536263}
-  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &154064157
 GameObject:
@@ -6399,6 +6404,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1121332585}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (4)
@@ -6462,6 +6471,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 845426039}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (21)
@@ -6604,6 +6617,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 510805325}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (24)
@@ -7124,6 +7141,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 206720640}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (27)
@@ -8036,6 +8057,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 206720640}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (21)
@@ -8554,6 +8579,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 845426039}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (23)
@@ -8617,6 +8646,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 845426039}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (35)
@@ -8939,6 +8972,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1818586017}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (14)
@@ -9370,6 +9407,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 510805325}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (30)
@@ -9864,6 +9905,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 206720640}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (34)
@@ -9927,6 +9972,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 510805325}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (29)
@@ -10457,6 +10506,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 206720640}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (39)
@@ -11176,6 +11229,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 845426039}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (27)
@@ -11239,6 +11296,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1818586017}
     m_Modifications:
+    - target: {fileID: 1814783361, guid: d1acda47e4c0da5438912daa94b0cda0, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 3231828985603076330, guid: d1acda47e4c0da5438912daa94b0cda0,
         type: 3}
       propertyPath: m_Name
@@ -12142,6 +12203,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2114979036}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (2)
@@ -12455,6 +12520,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1818586017}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (7)
@@ -12777,6 +12846,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 510805325}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (35)
@@ -14005,6 +14078,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135215507}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (1)
@@ -15299,6 +15376,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 510805325}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (38)
@@ -15362,6 +15443,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135215507}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp
@@ -15611,6 +15696,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1108184033}
     m_Modifications:
+    - target: {fileID: 1814783361, guid: d1acda47e4c0da5438912daa94b0cda0, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 3231828985603076330, guid: d1acda47e4c0da5438912daa94b0cda0,
         type: 3}
       propertyPath: m_Name
@@ -16342,6 +16431,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 654755259}
     m_Modifications:
+    - target: {fileID: 1814783361, guid: d1acda47e4c0da5438912daa94b0cda0, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 3231828985603076330, guid: d1acda47e4c0da5438912daa94b0cda0,
         type: 3}
       propertyPath: m_Name
@@ -16607,6 +16700,99 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1369736843}
     m_Modifications:
+    - target: {fileID: 1733756486, guid: 3219c13bf087a7e4f9756cc8c9207b27, type: 3}
+      propertyPath: m_OnActivate.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733756486, guid: 3219c13bf087a7e4f9756cc8c9207b27, type: 3}
+      propertyPath: m_OnActivate.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733756486, guid: 3219c13bf087a7e4f9756cc8c9207b27, type: 3}
+      propertyPath: m_OnActivate.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733756486, guid: 3219c13bf087a7e4f9756cc8c9207b27, type: 3}
+      propertyPath: m_OnActivate.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733756486, guid: 3219c13bf087a7e4f9756cc8c9207b27, type: 3}
+      propertyPath: m_OnActivate.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733756486, guid: 3219c13bf087a7e4f9756cc8c9207b27, type: 3}
+      propertyPath: m_OnActivate.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: EnableFlashlightSanity
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733756486, guid: 3219c13bf087a7e4f9756cc8c9207b27, type: 3}
+      propertyPath: m_OnActivate.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2964359076190105343, guid: 3219c13bf087a7e4f9756cc8c9207b27,
+        type: 3}
+      propertyPath: OnActivated.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2964359076190105343, guid: 3219c13bf087a7e4f9756cc8c9207b27,
+        type: 3}
+      propertyPath: OnDeactivated.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2964359076190105343, guid: 3219c13bf087a7e4f9756cc8c9207b27,
+        type: 3}
+      propertyPath: OnActivated.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2964359076190105343, guid: 3219c13bf087a7e4f9756cc8c9207b27,
+        type: 3}
+      propertyPath: OnActivated.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2964359076190105343, guid: 3219c13bf087a7e4f9756cc8c9207b27,
+        type: 3}
+      propertyPath: OnActivated.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2964359076190105343, guid: 3219c13bf087a7e4f9756cc8c9207b27,
+        type: 3}
+      propertyPath: OnActivated.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1075366206}
+    - target: {fileID: 2964359076190105343, guid: 3219c13bf087a7e4f9756cc8c9207b27,
+        type: 3}
+      propertyPath: OnActivated.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: EnableFlashlightSanity
+      objectReference: {fileID: 0}
+    - target: {fileID: 2964359076190105343, guid: 3219c13bf087a7e4f9756cc8c9207b27,
+        type: 3}
+      propertyPath: OnActivated.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2964359076190105343, guid: 3219c13bf087a7e4f9756cc8c9207b27,
+        type: 3}
+      propertyPath: OnDeactivated.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2964359076190105343, guid: 3219c13bf087a7e4f9756cc8c9207b27,
+        type: 3}
+      propertyPath: OnDeactivated.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2964359076190105343, guid: 3219c13bf087a7e4f9756cc8c9207b27,
+        type: 3}
+      propertyPath: OnDeactivated.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1075366206}
+    - target: {fileID: 2964359076190105343, guid: 3219c13bf087a7e4f9756cc8c9207b27,
+        type: 3}
+      propertyPath: OnDeactivated.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: DisableFlashlightSanity
+      objectReference: {fileID: 0}
+    - target: {fileID: 2964359076190105343, guid: 3219c13bf087a7e4f9756cc8c9207b27,
+        type: 3}
+      propertyPath: OnDeactivated.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6480269097711890989, guid: 3219c13bf087a7e4f9756cc8c9207b27,
         type: 3}
       propertyPath: m_Name
@@ -16675,6 +16861,11 @@ PrefabInstance:
     - target: {fileID: 9146394904583860656, guid: 3219c13bf087a7e4f9756cc8c9207b27,
         type: 3}
       propertyPath: m_Intensity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9146394904583860656, guid: 3219c13bf087a7e4f9756cc8c9207b27,
+        type: 3}
+      propertyPath: m_RenderMode
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -17190,6 +17381,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 510805325}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (27)
@@ -18462,6 +18657,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2114979036}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp
@@ -18588,6 +18787,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 206720640}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (23)
@@ -18651,6 +18854,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 206720640}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (25)
@@ -19761,6 +19968,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 845426039}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (42)
@@ -20023,6 +20234,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 919633527}
     m_Modifications:
+    - target: {fileID: 1814783361, guid: d1acda47e4c0da5438912daa94b0cda0, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 3231828985603076330, guid: d1acda47e4c0da5438912daa94b0cda0,
         type: 3}
       propertyPath: m_Name
@@ -20098,6 +20313,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 845426039}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (24)
@@ -21188,6 +21407,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 845426039}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (34)
@@ -21344,6 +21567,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 845426039}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (33)
@@ -22784,6 +23011,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 845426039}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (29)
@@ -23263,6 +23494,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2114979036}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (3)
@@ -23690,6 +23925,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1818586017}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (18)
@@ -23919,6 +24158,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 510805325}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (23)
@@ -24809,6 +25052,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1818586017}
     m_Modifications:
+    - target: {fileID: 1814783361, guid: d1acda47e4c0da5438912daa94b0cda0, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 3231828985603076330, guid: d1acda47e4c0da5438912daa94b0cda0,
         type: 3}
       propertyPath: m_Name
@@ -25119,6 +25366,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1818586017}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (12)
@@ -25642,6 +25893,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1628611659}
     m_Modifications:
+    - target: {fileID: 1814783361, guid: d1acda47e4c0da5438912daa94b0cda0, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 3231828985603076330, guid: d1acda47e4c0da5438912daa94b0cda0,
         type: 3}
       propertyPath: m_Name
@@ -25858,6 +26113,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1121332585}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp
@@ -25951,6 +26210,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 845426039}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (41)
@@ -26014,6 +26277,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135215507}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (3)
@@ -26312,6 +26579,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1628611659}
     m_Modifications:
+    - target: {fileID: 1814783361, guid: d1acda47e4c0da5438912daa94b0cda0, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 3231828985603076330, guid: d1acda47e4c0da5438912daa94b0cda0,
         type: 3}
       propertyPath: m_Name
@@ -26767,6 +27038,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1818586017}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (5)
@@ -27062,6 +27337,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1818586017}
     m_Modifications:
+    - target: {fileID: 1814783361, guid: d1acda47e4c0da5438912daa94b0cda0, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 3231828985603076330, guid: d1acda47e4c0da5438912daa94b0cda0,
         type: 3}
       propertyPath: m_Name
@@ -28167,6 +28446,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1818586017}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (3)
@@ -28921,6 +29204,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1121332585}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (1)
@@ -29293,6 +29580,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1818586017}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (19)
@@ -29877,6 +30168,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 206720640}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (26)
@@ -30272,6 +30567,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1108184033}
     m_Modifications:
+    - target: {fileID: 1814783361, guid: d1acda47e4c0da5438912daa94b0cda0, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 3231828985603076330, guid: d1acda47e4c0da5438912daa94b0cda0,
         type: 3}
       propertyPath: m_Name
@@ -32241,6 +32540,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 845426039}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (38)
@@ -32433,6 +32736,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 152243569}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp
@@ -32582,6 +32889,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1074765103}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1075366205 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 878102817173273230, guid: 3219c13bf087a7e4f9756cc8c9207b27,
+    type: 3}
+  m_PrefabInstance: {fileID: 570797190}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1075366206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075366205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10006d69a37935c428ae659ecd742bea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  script: {fileID: 1543958005}
 --- !u!1 &1081099301
 GameObject:
   m_ObjectHideFlags: 0
@@ -32798,6 +33124,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 654755259}
     m_Modifications:
+    - target: {fileID: 1814783361, guid: d1acda47e4c0da5438912daa94b0cda0, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 3231828985603076330, guid: d1acda47e4c0da5438912daa94b0cda0,
         type: 3}
       propertyPath: m_Name
@@ -33109,6 +33439,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1818586017}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (11)
@@ -33669,6 +34003,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 693482551}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (1)
@@ -33921,36 +34259,6 @@ MonoBehaviour:
   m_MatchOrientation: 0
   m_TeleportTrigger: 0
   m_TeleportAnchorTransform: {fileID: 1119975572}
---- !u!1 &1120102530
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1120102531}
-  m_Layer: 0
-  m_Name: TriggerBoxes
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1120102531
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1120102530}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2013467957}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1121332584
 GameObject:
   m_ObjectHideFlags: 0
@@ -35558,6 +35866,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1818586017}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (2)
@@ -36124,6 +36436,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 862314777}
     m_Modifications:
+    - target: {fileID: 1814783361, guid: d1acda47e4c0da5438912daa94b0cda0, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 3231828985603076330, guid: d1acda47e4c0da5438912daa94b0cda0,
         type: 3}
       propertyPath: m_Name
@@ -36536,6 +36852,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 845426039}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (39)
@@ -37750,6 +38070,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 510805325}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (26)
@@ -37813,6 +38137,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 510805325}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (34)
@@ -41146,6 +41474,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 135215507}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (2)
@@ -41347,6 +41679,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2014526062}
     m_Modifications:
+    - target: {fileID: 1814783361, guid: d1acda47e4c0da5438912daa94b0cda0, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 3231828985603076330, guid: d1acda47e4c0da5438912daa94b0cda0,
         type: 3}
       propertyPath: m_Name
@@ -41846,6 +42182,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 206720640}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (41)
@@ -42887,11 +43227,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2114979036}
     m_Modifications:
-    - target: {fileID: 3231828984298608202, guid: d1acda47e4c0da5438912daa94b0cda0,
-        type: 3}
-      propertyPath: m_Intensity
-      value: 100
-      objectReference: {fileID: 0}
+    - target: {fileID: 1814783361, guid: d1acda47e4c0da5438912daa94b0cda0, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 3231828985603076330, guid: d1acda47e4c0da5438912daa94b0cda0,
         type: 3}
       propertyPath: m_Name
@@ -42967,6 +43306,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2114979036}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (4)
@@ -43604,6 +43947,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 206720640}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (42)
@@ -43667,6 +44014,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 206720640}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (24)
@@ -43805,6 +44156,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 654755259}
     m_Modifications:
+    - target: {fileID: 1814783361, guid: d1acda47e4c0da5438912daa94b0cda0, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 3231828985603076330, guid: d1acda47e4c0da5438912daa94b0cda0,
         type: 3}
       propertyPath: m_Name
@@ -44061,6 +44416,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 862314777}
     m_Modifications:
+    - target: {fileID: 1814783361, guid: d1acda47e4c0da5438912daa94b0cda0, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 3231828985603076330, guid: d1acda47e4c0da5438912daa94b0cda0,
         type: 3}
       propertyPath: m_Name
@@ -44151,6 +44510,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 510805325}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (40)
@@ -44894,6 +45257,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1818586017}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (9)
@@ -45279,6 +45646,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1121332585}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (5)
@@ -46805,6 +47176,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2014526062}
     m_Modifications:
+    - target: {fileID: 1814783361, guid: d1acda47e4c0da5438912daa94b0cda0, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 3231828985603076330, guid: d1acda47e4c0da5438912daa94b0cda0,
         type: 3}
       propertyPath: m_Name
@@ -46895,6 +47270,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 510805325}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (43)
@@ -47383,6 +47762,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1108184033}
     m_Modifications:
+    - target: {fileID: 1814783361, guid: d1acda47e4c0da5438912daa94b0cda0, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 3231828985603076330, guid: d1acda47e4c0da5438912daa94b0cda0,
         type: 3}
       propertyPath: m_Name
@@ -47473,6 +47856,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 206720640}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (33)
@@ -47881,6 +48268,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1818586017}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (16)
@@ -48913,6 +49304,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 654755259}
     m_Modifications:
+    - target: {fileID: 1814783361, guid: d1acda47e4c0da5438912daa94b0cda0, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 3231828985603076330, guid: d1acda47e4c0da5438912daa94b0cda0,
         type: 3}
       propertyPath: m_Name
@@ -49081,6 +49476,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1121332585}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (6)
@@ -49164,6 +49563,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 510805325}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (36)
@@ -49788,6 +50191,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1818586017}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (10)
@@ -50017,6 +50424,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 510805325}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (22)
@@ -51318,6 +51729,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 693482551}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (3)
@@ -51567,6 +51982,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1818586017}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (20)
@@ -53427,6 +53846,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1818586017}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (17)
@@ -54272,6 +54695,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 845426039}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (40)
@@ -54335,6 +54762,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 206720640}
     m_Modifications:
+    - target: {fileID: 1814783361, guid: d1acda47e4c0da5438912daa94b0cda0, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 3231828985603076330, guid: d1acda47e4c0da5438912daa94b0cda0,
         type: 3}
       propertyPath: m_Name
@@ -54737,6 +55168,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1818586017}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (6)
@@ -55618,6 +56053,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 845426039}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (22)
@@ -55681,6 +56120,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 206720640}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (28)
@@ -56319,6 +56762,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 510805325}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (28)
@@ -56573,6 +57020,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 206720640}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (22)
@@ -56636,6 +57087,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 510805325}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (39)
@@ -57387,7 +57842,7 @@ Transform:
   - {fileID: 1121332585}
   - {fileID: 303945314}
   - {fileID: 1369736843}
-  - {fileID: 153307613}
+  - {fileID: 72464867}
   m_Father: {fileID: 1783149007}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -57616,6 +58071,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 845426039}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (36)
@@ -58911,6 +59370,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 845426039}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (43)
@@ -59140,6 +59603,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1818586017}
     m_Modifications:
+    - target: {fileID: 1814783361, guid: d1acda47e4c0da5438912daa94b0cda0, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 3231828985603076330, guid: d1acda47e4c0da5438912daa94b0cda0,
         type: 3}
       propertyPath: m_Name
@@ -59249,6 +59716,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 510805325}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (25)
@@ -59743,6 +60214,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 510805325}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (41)
@@ -59806,6 +60281,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 693482551}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (2)
@@ -60045,6 +60524,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 206720640}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (43)
@@ -60201,6 +60684,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 206720640}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (38)
@@ -60616,6 +61103,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 206720640}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (40)
@@ -60938,6 +61429,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 845426039}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (28)
@@ -61330,6 +61825,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 845426039}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (26)
@@ -61675,6 +62174,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 510805325}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (33)
@@ -62554,7 +63057,6 @@ Transform:
   - {fileID: 451876916}
   - {fileID: 919633527}
   - {fileID: 1487666141}
-  - {fileID: 1120102531}
   m_Father: {fileID: 790893961}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
@@ -62950,6 +63452,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1818586017}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (13)
@@ -64562,6 +65068,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 510805325}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (21)
@@ -64737,6 +65247,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 693482551}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp
@@ -65049,6 +65563,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2114979036}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (5)
@@ -65557,6 +66075,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2114979036}
     m_Modifications:
+    - target: {fileID: 1468263893, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 1907678173372122, guid: 7a0c0987d19df5b47a6baf7170d6dfe4, type: 3}
       propertyPath: m_Name
       value: lamp (1)
@@ -65620,6 +66142,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1121332585}
     m_Modifications:
+    - target: {fileID: 1814783361, guid: d1acda47e4c0da5438912daa94b0cda0, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1543958005}
     - target: {fileID: 3231828985603076330, guid: d1acda47e4c0da5438912daa94b0cda0,
         type: 3}
       propertyPath: m_Name
