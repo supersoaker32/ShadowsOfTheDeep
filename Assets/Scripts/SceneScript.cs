@@ -6,30 +6,60 @@ using UnityEngine.UI;
 
 public class SceneScript : MonoBehaviour
 {
+    //Environment
     [SerializeField] AudioSource atmosphereSound = null;
+
+    //Power
     [SerializeField] PowerOn powerScript = null;
     [SerializeField] Volume volume = null;
     [SerializeField] Slider powerDisplay = null;
     [SerializeField] GameObject[] powerFeatures = null;
 
+    //HUD
+    public Slider sanityDisplay = null;
+
     public bool power = false;
-    public float powerLevel = 100f;
-    float difficultyTimer = 0;
+    public float powerLevel;
+    public float lightLevel = 0;
+
     void Start()
     {
         atmosphereSound.Play();
-        powerLevel = 100f;
+        powerLevel = 0f;
+        sanityDisplay.value = 0;
+        if (Application.isEditor)
+        {
+            Debug.Log("Debug mode is enabled");
+            powerScript.devMode = true;
+        }
     }
 
     private void Update()
     {
-        //Jumpscare only happens when power is initially turned on, adjusting power variable here
-        if (powerScript.jumpscare) power = true;
+        //Dev mode
+        if (Application.isEditor)
+        {
+            if (Input.GetKeyDown(KeyCode.LeftControl))
+            {
+                Debug.Log("Power enabled and full");
+                powerLevel = 100f;
+                powerScript.powerOn = true;
+                power = true;
+
+                //Enable power control
+                foreach (GameObject powerFeature in powerFeatures)
+                {
+                    powerFeature.SetActive(true);
+                }
+            }
+        }
+
+            //Jumpscare only happens when power is initially turned on, adjusting power variable here
+            if (powerScript.jumpscare) power = true;
 
         //If power is on, reduce power as time continues
         if (powerScript.powerOn && powerLevel > 0)
         {
-            difficultyTimer += 0.01f;
             powerDisplay.enabled = true;
             if (power)
             {
@@ -49,9 +79,7 @@ public class SceneScript : MonoBehaviour
         }
         powerDisplay.value = powerLevel;
 
-        //Add difficulty
-        //if (difficultyTimer >= 100) powerScript.powerOn = false;
-
+        //Turn off power if no power
         if (powerLevel <= 0)
         {
             power = false;
@@ -60,6 +88,9 @@ public class SceneScript : MonoBehaviour
                 powerFeature.SetActive(false);
             }
         }
+
+        //Decrease sanity over time
+        sanityDisplay.value -= 0.0001f;
     }
 
     public void PowerOnPressed()

@@ -12,6 +12,7 @@ public class PowerOn : MonoBehaviour
     [SerializeField] GameObject[] powerFeatures= null;
     [SerializeField] AudioSource power = null;
     public bool powerOn = false;
+    public bool devMode = false;
 
     //Room
     [SerializeField] GameObject[] lightningEffects = null;
@@ -36,7 +37,6 @@ public class PowerOn : MonoBehaviour
                 foreach(GameObject powerFeature in powerFeatures)
                 {
                     powerFeature.SetActive(false);
-
                 }
 
                 //Disable power sounds and lightning effects
