@@ -5,13 +5,15 @@ using UnityEngine;
 public class LightDetection : MonoBehaviour
 {
     [SerializeField] SceneScript script = null;
-    private float criticalPower = 5;
-    private float lowPower = 15;
+    private float criticalPowerLevel = 5;
+    private float lowPowerLevel = 15;
     private float highPower = 75;
-    private float dInsanity = -0.003f;
-    private float iSlow = 0.0005f;
-    private float iQuick = 0.001f;
-    private float iVQuick = 0.004f;
+    private float fullPower = -0.003f;
+    private float midPower = -0.0006f;
+    private float lowPower = -0.0005f;
+    private float critPower = 0.0003f;
+    private float noPower = 0.0001f;
+    //Static decrease: 0.0005
 
     private void OnTriggerStay(Collider other)
     {
@@ -26,40 +28,40 @@ public class LightDetection : MonoBehaviour
             //If there's power effect insanity
             if (script.power)
             {
-                //Increase sanity if safe power level
+                //Decrease insanity if high power level
                 if (script.powerLevel > highPower)
                 {
-                    Debug.Log("Increase sanity" + dInsanity);
-                    script.sanityDisplay.value += dInsanity;
+                    Debug.Log("Increase sanity" + fullPower);
+                    script.insanityDisplay.value += fullPower;
                 }
 
-                //Slow decrease within moderate range
-                else if (script.powerLevel < highPower && script.powerLevel > lowPower)
+                //Slowly decrease insanity if middle power level
+                else if (script.powerLevel < highPower && script.powerLevel > lowPowerLevel)
                 {
-                    Debug.Log("Decrease sanity" + iSlow);
-                    script.sanityDisplay.value += iSlow;
+                    Debug.Log("Decrease sanity" + midPower);
+                    script.insanityDisplay.value += midPower;
                 }
 
-                //Drastically decrease within low range
-                else if (script.powerLevel > criticalPower && script.powerLevel < lowPower)
+                //No effect on insanity if low power level
+                else if (script.powerLevel > criticalPowerLevel && script.powerLevel < lowPowerLevel)
                 {
-                    Debug.Log("Decrease sanity quickly" + iQuick);
-                    script.sanityDisplay.value += iQuick;
+                    Debug.Log("Decrease sanity quickly" + lowPower);
+                    script.insanityDisplay.value += lowPower;
                 }
 
-                //Very drastically decrease within critical range
+                //Increase insanity if critcial power level
                 else
                 {
-                    Debug.Log("Decrease sanity quickly" + iVQuick);
-                    script.sanityDisplay.value += iVQuick;
+                    Debug.Log("Decrease sanity quickly" + critPower);
+                    script.insanityDisplay.value += critPower;
                 }
             }
 
-            //Very drastically decrease if off
+            //Quickly increase insanity if power is off
             else
             {
-                Debug.Log("Decrease sanity very quickly" + iVQuick);
-                script.sanityDisplay.value += iVQuick;
+                Debug.Log("Decrease sanity very quickly" + noPower);
+                script.insanityDisplay.value += noPower;
             }
         }
     }

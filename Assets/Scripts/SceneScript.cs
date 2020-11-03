@@ -16,7 +16,7 @@ public class SceneScript : MonoBehaviour
     [SerializeField] GameObject[] powerFeatures = null;
 
     //HUD
-    public Slider sanityDisplay = null;
+    public Slider insanityDisplay = null;
 
     public bool power = false;
     public float powerLevel;
@@ -26,7 +26,7 @@ public class SceneScript : MonoBehaviour
     {
         atmosphereSound.Play();
         powerLevel = 0f;
-        sanityDisplay.value = 0;
+        insanityDisplay.value = 0;
         if (Application.isEditor)
         {
             Debug.Log("Debug mode is enabled");
@@ -51,6 +51,11 @@ public class SceneScript : MonoBehaviour
                 {
                     powerFeature.SetActive(true);
                 }
+            }
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Debug.Log("Insanity reset to 0");
+                insanityDisplay.value = 0;
             }
         }
 
@@ -89,8 +94,8 @@ public class SceneScript : MonoBehaviour
             }
         }
 
-        //Decrease sanity over time
-        sanityDisplay.value -= 0.0001f;
+        //Increase insanity over time
+        insanityDisplay.value += 0.0005f;
     }
 
     public void PowerOnPressed()
