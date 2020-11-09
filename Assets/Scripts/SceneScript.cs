@@ -14,13 +14,14 @@ public class SceneScript : MonoBehaviour
     [SerializeField] Volume volume = null;
     [SerializeField] Slider powerDisplay = null;
     [SerializeField] GameObject[] powerFeatures = null;
+    public bool power = false;
+    public float powerLevel;
+    public float lightLevel = 0;
 
     //HUD
     public Slider insanityDisplay = null;
 
-    public bool power = false;
-    public float powerLevel;
-    public float lightLevel = 0;
+    //Inventory
 
     void Start()
     {
@@ -56,6 +57,11 @@ public class SceneScript : MonoBehaviour
             {
                 Debug.Log("Insanity reset to 0");
                 insanityDisplay.value = 0;
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha0))
+            {
+                Debug.Log("Insanity set to max");
+                insanityDisplay.value = 100;
             }
         }
 
