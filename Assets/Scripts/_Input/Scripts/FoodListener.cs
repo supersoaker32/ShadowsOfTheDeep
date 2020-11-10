@@ -8,6 +8,7 @@ public class FoodListener : MonoBehaviour
 {
     public ButtonHandler secondaryButtonLeft = null;
     [SerializeField] Inventory inventory = null;
+    [SerializeField] SceneScript scene = null;
 
     private void OnEnable()
     {
@@ -29,6 +30,11 @@ public class FoodListener : MonoBehaviour
             Food food = inventory.food.First();
             if (food != null)
             {
+                //Add food to hungerDisplay
+                scene.hungerDisplay.value += food.hungerFill;
+
+                //Cap fullness at 100
+                if (scene.hungerDisplay.value > 100) scene.hungerDisplay.value = 100;
                 Debug.Log($"Ate {food.hungerFill}");
                 inventory.food.Remove(food);
             }

@@ -21,9 +21,9 @@ public class FoodGrowth : MonoBehaviour
 
         if (power)
         {
-            progressBars[0].value += 0.0007f;
-            progressBars[1].value += 0.0005f;
-            progressBars[2].value += 0.0001f;
+            progressBars[0].value += 0.00007f;
+            progressBars[1].value += 0.00005f;
+            progressBars[2].value += 0.00001f;
 
             scene.powerLevel -= 0.005f;
             Debug.Log("Food draining power by .001f");

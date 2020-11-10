@@ -20,6 +20,7 @@ public class SceneScript : MonoBehaviour
     //HUD
     public Slider insanityDisplay = null;
     public Slider hungerDisplay = null;
+    public Slider thirstDisplay = null;
 
     //Inventory
 
@@ -110,6 +111,12 @@ public class SceneScript : MonoBehaviour
         //Increase insanity over time
         insanityDisplay.value += 0.0005f;
         Debug.Log("Insanity increased by .0005 from being alone");
+
+        hungerDisplay.value -= 0.0015f;
+        Debug.Log("Hunger decreased by .0015 from ambience");
+
+        thirstDisplay.value -= 0.003f;
+        Debug.Log("Thirst decreased by .003 from ambience");
     }
 
     public void PowerOnPressed()
