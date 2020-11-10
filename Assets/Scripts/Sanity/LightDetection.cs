@@ -31,28 +31,28 @@ public class LightDetection : MonoBehaviour
                 //Decrease insanity if high power level
                 if (script.powerLevel > highPower)
                 {
-                    Debug.Log("Increase sanity" + fullPower);
+                    Debug.Log("Increase sanity " + fullPower + " from having full power");
                     script.insanityDisplay.value += fullPower;
                 }
 
                 //Slowly decrease insanity if middle power level
                 else if (script.powerLevel < highPower && script.powerLevel > lowPowerLevel)
                 {
-                    Debug.Log("Decrease sanity" + midPower);
+                    Debug.Log("Decrease sanity " + midPower + " from being below " + highPower);
                     script.insanityDisplay.value += midPower;
                 }
 
                 //No effect on insanity if low power level
                 else if (script.powerLevel > criticalPowerLevel && script.powerLevel < lowPowerLevel)
                 {
-                    Debug.Log("Decrease sanity quickly" + lowPower);
+                    Debug.Log("Decrease sanity quickly" + lowPower + " from being below " + lowPowerLevel);
                     script.insanityDisplay.value += lowPower;
                 }
 
                 //Increase insanity if critcial power level
                 else
                 {
-                    Debug.Log("Decrease sanity quickly" + critPower);
+                    Debug.Log("Decrease sanity quickly" + critPower + " from being in critical power zone");
                     script.insanityDisplay.value += critPower;
                 }
             }
@@ -60,7 +60,7 @@ public class LightDetection : MonoBehaviour
             //Quickly increase insanity if power is off
             else
             {
-                Debug.Log("Decrease sanity very quickly" + noPower);
+                Debug.Log("Decrease sanity very quickly " + noPower + " From having no power on, darkness is scary");
                 script.insanityDisplay.value += noPower;
             }
         }

@@ -25,13 +25,20 @@ public class BatteryListener : MonoBehaviour
     {
         Debug.Log("Reloaded battery.");
         
-        //Make sure all batteries are not active, then set first to be active
-        foreach(Battery battery in inventory.batteries)
+        if(inventory.batteries.Count > 0)
         {
-            if (battery.activeBattery) battery.activeBattery = false;
+            //Make sure all batteries are not active, then set first to be active
+            foreach(Battery battery in inventory.batteries)
+            {
+                if (battery.activeBattery) battery.activeBattery = false;
+            }
+            flashlight.battery = inventory.batteries.First();
+            flashlight.battery.activeBattery = true;
         }
-        flashlight.battery = inventory.batteries.First();
-        flashlight.battery.activeBattery = true;
+        else
+        {
+            Debug.Log("No batteries in inventory");
+        }
 
     }
 }

@@ -30,71 +30,20 @@ public class PowerOn : MonoBehaviour
             //Disable fusebox
             if (step == 0)
             {
-                powerOn = false;
-                Debug.Log("PowerOn: " + powerOn);
-
-                //Disable power control
-                foreach(GameObject powerFeature in powerFeatures)
-                {
-                    powerFeature.SetActive(false);
-                }
-
-                //Disable power sounds and lightning effects
-                if (power.isPlaying) power.Stop();
-                foreach (GameObject lightning in lightningEffects)
-                {
-                    lightning.SetActive(false);
-                }
+                PowerDisabled();
             }
 
             //Enable fusebox
             else
             {
-                powerOn = true;
-                Debug.Log("PowerOn: " + powerOn);
-
-                //Enable power control
-                foreach (GameObject powerFeature in powerFeatures)
-                {
-                    powerFeature.SetActive(true);
-                }
-
-                //Turn on power sounds
-                if (power != null) {
-                    if (power.isPlaying)
-                    {
-                        power.Stop();
-                        power.Play();
-                    }
-                    else
-                    {
-                        power.Play();
-
-                        //Enable lightning effects
-                        foreach(GameObject lightning in lightningEffects)
-                        {
-                            lightning.SetActive(true);
-                        }
-                    }
-                }
+                PowerEnabled();
             }
         }
 
         //Turn off fusebox if there's no fuse
         else
         {
-            powerOn = false;
-            Debug.Log("PowerOn: " + powerOn);
-
-            foreach (GameObject powerFeature in powerFeatures)
-            {
-                powerFeature.SetActive(false);
-            }
-            if (power.isPlaying) power.Stop();
-            foreach (GameObject lightning in lightningEffects)
-            {
-                lightning.SetActive(false);
-            }
+            PowerDisabled();
         }
     }
 
@@ -121,5 +70,58 @@ public class PowerOn : MonoBehaviour
 
         //Activate only on the first trigger
         jumpscare = false;
+    }
+
+    public void PowerEnabled()
+    {
+        RenderSettings.fogDensity = 0.0001f;
+        powerOn = true;
+        Debug.Log("PowerOn: " + powerOn);
+
+        //Enable power control
+        foreach (GameObject powerFeature in powerFeatures)
+        {
+            powerFeature.SetActive(true);
+        }
+
+        //Turn on power sounds
+        if (power != null)
+        {
+            if (power.isPlaying)
+            {
+                power.Stop();
+                power.Play();
+            }
+            else
+            {
+                power.Play();
+
+                //Enable lightning effects
+                foreach (GameObject lightning in lightningEffects)
+                {
+                    lightning.SetActive(true);
+                }
+            }
+        }
+    }
+
+    public void PowerDisabled()
+    {
+        RenderSettings.fogDensity = 0.01f;
+        powerOn = false;
+        Debug.Log("PowerOn: " + powerOn);
+
+        //Disable power control
+        foreach (GameObject powerFeature in powerFeatures)
+        {
+            powerFeature.SetActive(false);
+        }
+
+        //Disable power sounds and lightning effects
+        if (power.isPlaying) power.Stop();
+        foreach (GameObject lightning in lightningEffects)
+        {
+            lightning.SetActive(false);
+        }
     }
 }

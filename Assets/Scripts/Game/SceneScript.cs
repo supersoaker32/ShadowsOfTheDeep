@@ -11,7 +11,6 @@ public class SceneScript : MonoBehaviour
 
     //Power
     [SerializeField] PowerOn powerScript = null;
-    [SerializeField] Volume volume = null;
     [SerializeField] Slider powerDisplay = null;
     [SerializeField] GameObject[] powerFeatures = null;
     public bool power = false;
@@ -20,14 +19,18 @@ public class SceneScript : MonoBehaviour
 
     //HUD
     public Slider insanityDisplay = null;
+    public Slider hungerDisplay = null;
 
     //Inventory
 
     void Start()
     {
+        RenderSettings.fog = true;
+        RenderSettings.fogDensity = 0.01f;
         atmosphereSound.Play();
         powerLevel = 0f;
         insanityDisplay.value = 0;
+        hungerDisplay.value = 100;
         if (Application.isEditor)
         {
             Debug.Log("Debug mode is enabled");
@@ -42,17 +45,22 @@ public class SceneScript : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.LeftControl))
             {
+                powerScript.PowerEnabled();
+
                 Debug.Log("Power enabled and full");
                 powerLevel = 100f;
-                powerScript.powerOn = true;
                 power = true;
-
-                //Enable power control
-                foreach (GameObject powerFeature in powerFeatures)
-                {
-                    powerFeature.SetActive(true);
-                }
             }
+
+            if (Input.GetKeyDown(KeyCode.RightControl))
+            {
+                powerScript.PowerDisabled();
+
+                Debug.Log("Power disabled and empty");
+                powerLevel = 0f;
+                power = false;
+            }
+
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 Debug.Log("Insanity reset to 0");
@@ -74,19 +82,18 @@ public class SceneScript : MonoBehaviour
             powerDisplay.enabled = true;
             if (power)
             {
-                volume.enabled = false;
                 powerLevel -= 0.01f;
+                Debug.Log("Power level drained by .01 from ambient power usage");
             }
             else
             {
-                volume.enabled = true;
                 powerLevel += 0.008f;
+                Debug.Log("Power level increased by .008 from no power usage");
             }
         }
         else
         {
             powerDisplay.enabled = false;
-            volume.enabled = true;
         }
         powerDisplay.value = powerLevel;
 
@@ -102,6 +109,7 @@ public class SceneScript : MonoBehaviour
 
         //Increase insanity over time
         insanityDisplay.value += 0.0005f;
+        Debug.Log("Insanity increased by .0005 from being alone");
     }
 
     public void PowerOnPressed()
