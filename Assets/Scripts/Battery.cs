@@ -7,6 +7,7 @@ public class Battery : MonoBehaviour
     [SerializeField] Inventory inventory = null;
     public float charge = 100;
     public bool activeBattery = false;
+
     public void AddToInventory()
     {
         gameObject.SetActive(false);
@@ -24,12 +25,17 @@ public class Battery : MonoBehaviour
             }
         }
             //Remove dead batteries from inventory
-            if (charge <= 0)
+        if (charge <= 0)
         {
             gameObject.SetActive(false);
             inventory.batteries.Remove(this);
             Debug.Log("Battery dead. Removed from inventory.");
             Destroy(this);
+        }
+
+        if (activeBattery && charge > 0)
+        {
+            charge -= 0.2f;
         }
     }
 }
