@@ -16,14 +16,6 @@ public class Battery : MonoBehaviour
 
     private void Update()
     {
-        //Dev mode to kill battery
-        if (Application.isEditor)
-        {
-            if (Input.GetKeyDown(KeyCode.K))
-            {
-                charge = -100;
-            }
-        }
             //Remove dead batteries from inventory
         if (charge <= 0)
         {

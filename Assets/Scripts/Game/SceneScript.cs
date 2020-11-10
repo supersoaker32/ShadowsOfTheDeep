@@ -107,6 +107,5 @@ public class SceneScript : MonoBehaviour
     public void PowerOnPressed()
     {
         power = !power;
-
     }
 }
