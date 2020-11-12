@@ -17,13 +17,25 @@ public class FoodGrowth : MonoBehaviour
     private bool power = false;
     void Update()
     {
-        if (gameObject.activeSelf) power = true;
+        //Dev mode
+        if (Application.isEditor)
+        {
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                progressBars[0].value = 1;
+                progressBars[1].value = 1;
+                progressBars[2].value = 1;
+            }
+        }
+    
+
+            if (gameObject.activeSelf) power = true;
 
         if (power)
         {
-            progressBars[0].value += 0.00007f;
-            progressBars[1].value += 0.00005f;
-            progressBars[2].value += 0.00001f;
+            progressBars[0].value += 0.00009f;
+            progressBars[1].value += 0.00007f;
+            progressBars[2].value += 0.00005f;
 
             scene.powerLevel -= 0.005f;
             Debug.Log("Food draining power by .001f");

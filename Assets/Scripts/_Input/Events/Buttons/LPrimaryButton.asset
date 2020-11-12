@@ -10,6 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd217433167b26b43b469dcac4f728c1, type: 3}
-  m_Name: PrimaryButton
+  m_Name: LPrimaryButton
   m_EditorClassIdentifier: 
   button: 6
+  node: 4

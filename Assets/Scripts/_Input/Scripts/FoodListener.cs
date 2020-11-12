@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.XR;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class FoodListener : MonoBehaviour
@@ -9,6 +10,7 @@ public class FoodListener : MonoBehaviour
     public ButtonHandler secondaryButtonLeft = null;
     [SerializeField] Inventory inventory = null;
     [SerializeField] SceneScript scene = null;
+
 
     private void OnEnable()
     {
@@ -43,6 +45,5 @@ public class FoodListener : MonoBehaviour
         {
             Debug.Log("No food in inventory");
         }
-
     }
 }

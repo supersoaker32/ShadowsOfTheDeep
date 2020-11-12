@@ -20,6 +20,9 @@ public class InputManager : MonoBehaviour
 
     private void HandleButtonEvents()
     {
-        foreach (ButtonHandler handler in buttonHandlers) handler.Handlestate(controller);
+        foreach (ButtonHandler handler in buttonHandlers)
+        {
+            if(handler.node == controller.controllerNode) handler.Handlestate(controller);
+        }
     }
 }

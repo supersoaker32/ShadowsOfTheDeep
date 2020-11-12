@@ -12,7 +12,6 @@ public class SceneScript : MonoBehaviour
     //Power
     [SerializeField] PowerOn powerScript = null;
     [SerializeField] Slider powerDisplay = null;
-    [SerializeField] GameObject[] powerFeatures = null;
     public bool power = false;
     public float powerLevel;
     public float lightLevel = 0;
@@ -102,10 +101,7 @@ public class SceneScript : MonoBehaviour
         if (powerLevel <= 0)
         {
             power = false;
-            foreach(GameObject powerFeature in powerFeatures)
-            {
-                powerFeature.SetActive(false);
-            }
+            powerScript.PowerDisabled();
         }
 
         //Increase insanity over time
