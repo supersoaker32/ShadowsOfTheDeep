@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Battery : MonoBehaviour
 {
-    [SerializeField] Inventory inventory = null;
+    [SerializeField] public Inventory inventory = null;
     public float charge = 100;
     public bool activeBattery = false;
 
@@ -16,7 +16,7 @@ public class Battery : MonoBehaviour
 
     private void Update()
     {
-            //Remove dead batteries from inventory
+        //Remove dead batteries from inventory
         if (charge <= 0)
         {
             gameObject.SetActive(false);

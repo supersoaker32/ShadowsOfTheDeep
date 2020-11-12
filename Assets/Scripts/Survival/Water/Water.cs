@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Food : MonoBehaviour
+public class Water : MonoBehaviour
 {
     [SerializeField] public Inventory inventory = null;
-    [SerializeField] public float hungerFill = 10.0f;
+    [SerializeField] public float thirstQuench = 10.0f;
 
     public void AddToInventory()
     {
         gameObject.SetActive(false);
-        inventory.food.Add(this);
+        inventory.water.Add(this);
     }
 }
