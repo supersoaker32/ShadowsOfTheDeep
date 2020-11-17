@@ -27,7 +27,7 @@ public class FlashlightSanity : MonoBehaviour
             }
             else
             {
-                Debug.Log("Dead batteries: {battery.charge}");
+                Debug.Log($"Dead batteries: {battery.charge}");
             }
 
         }
@@ -53,7 +53,7 @@ public class FlashlightSanity : MonoBehaviour
 
         if (!flashlightOn)
         {
-            Debug.Log("Sanity decreased: flashlight off");
+            Debug.Log("Sanity decreased -.0002: flashlight off");
             script.insanityDisplay.value -= 0.0002f;
         }
         if(battery != null)
@@ -61,6 +61,10 @@ public class FlashlightSanity : MonoBehaviour
             if(battery.charge <= 0 || !battery.activeBattery)
             {
                 script.insanityDisplay.value -= 0.0001f;
+            }
+            else
+            {
+                battery.charge -= 0.01f;
             }
 
         }

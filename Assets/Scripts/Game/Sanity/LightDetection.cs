@@ -29,30 +29,30 @@ public class LightDetection : MonoBehaviour
             if (script.power)
             {
                 //Decrease insanity if high power level
-                if (script.powerLevel > highPower)
+                if (script.powerDisplay.value > highPower)
                 {
-                    Debug.Log("Increase sanity " + fullPower + " from having full power");
+                    Debug.Log($"Decrease insanity {fullPower} from having full power");
                     script.insanityDisplay.value += fullPower;
                 }
 
                 //Slowly decrease insanity if middle power level
-                else if (script.powerLevel < highPower && script.powerLevel > lowPowerLevel)
+                else if (script.powerDisplay.value < highPower && script.powerDisplay.value > lowPowerLevel)
                 {
-                    Debug.Log("Decrease sanity " + midPower + " from being below " + highPower);
+                    Debug.Log($"Increase insanity {midPower} from being below {highPower}");
                     script.insanityDisplay.value += midPower;
                 }
 
                 //No effect on insanity if low power level
-                else if (script.powerLevel > criticalPowerLevel && script.powerLevel < lowPowerLevel)
+                else if (script.powerDisplay.value > criticalPowerLevel && script.powerDisplay.value < lowPowerLevel)
                 {
-                    Debug.Log("Decrease sanity quickly" + lowPower + " from being below " + lowPowerLevel);
+                    Debug.Log($"Increase insanity quickly {lowPower} from being below {lowPowerLevel}");
                     script.insanityDisplay.value += lowPower;
                 }
 
                 //Increase insanity if critcial power level
                 else
                 {
-                    Debug.Log("Decrease sanity quickly" + critPower + " from being in critical power zone");
+                    Debug.Log($"Increase insanity quickly {critPower} from being in critical power zone");
                     script.insanityDisplay.value += critPower;
                 }
             }
@@ -60,7 +60,7 @@ public class LightDetection : MonoBehaviour
             //Quickly increase insanity if power is off
             else
             {
-                Debug.Log("Decrease sanity very quickly " + noPower + " From having no power on, darkness is scary");
+                Debug.Log($"Decrease sanity very quickly {noPower} From having no power on, darkness is scary");
                 script.insanityDisplay.value += noPower;
             }
         }

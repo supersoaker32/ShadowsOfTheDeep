@@ -11,13 +11,14 @@ public class PowerOn : MonoBehaviour
     [SerializeField] FuseBox box = null;
     [SerializeField] GameObject[] powerFeatures= null;
     [SerializeField] AudioSource power = null;
-    public bool powerOn = false;
-    public bool devMode = false;
 
     //Room
     [SerializeField] GameObject[] lightningEffects = null;
+    [SerializeField] DialInteractable fusebox = null;
+    [SerializeField] JumpScares scare = null;
     [SerializeField] GameObject monster = null;
     [SerializeField] AudioSource scareSound = null;
+
 
     public bool jumpscare = true;
 
@@ -25,58 +26,50 @@ public class PowerOn : MonoBehaviour
     {
         if (box.m_FusePresent)
         {
-            if(jumpscare) StartCoroutine(MonsterJumpScare(2.5f));
 
             //Disable fusebox
             if (step == 0)
             {
+                Debug.Log("Turn off power");
                 PowerDisabled();
             }
 
             //Enable fusebox
             else
             {
+                Debug.Log("Turn on power");
                 PowerEnabled();
+                if (jumpscare)
+                {
+                    StartCoroutine(scare.MonsterJumpScare(monster, scareSound, 2.5f));
+                    jumpscare = false;
+                }
             }
         }
 
         //Turn off fusebox if there's no fuse
         else
         {
+            Debug.Log("No fuse present");
             PowerDisabled();
         }
     }
 
-    IEnumerator MonsterJumpScare(float seconds)
-    {            
-        //Get camera position
-        Vector3 screenDimensions = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
-
-        //Spawn monster on left or right randomly
-        int choose = UnityEngine.Random.Range(0, 1);
-        int z = choose == 0 ? 1 : -1;
-
-        //Set position for monster jump scare
-        Vector3 position = screenDimensions + new Vector3(0, 0, z);
-        position.y = 0;
-        monster.transform.position = position;
-
-        //Activate jumpscare, disable monster after seconds
-        monster.SetActive(true);
-        scareSound.Play();
-        yield return new WaitForSeconds(seconds);
-        monster.SetActive(false);
-        scareSound.Stop();
-
-        //Activate only on the first trigger
-        jumpscare = false;
+    public void SwitchPartial()
+    {
+        float angle = fusebox.CurrentAngle;
+        if(angle > .9f)
+        {
+            SwitchOn(1);
+        }
     }
+
+
 
     public void PowerEnabled()
     {
-        RenderSettings.fogDensity = 0.0001f;
-        powerOn = true;
-        Debug.Log("PowerOn: " + powerOn);
+        Debug.Log("Power on");
+        RenderSettings.fogDensity = 0.005f;
 
         //Enable power control
         foreach (GameObject powerFeature in powerFeatures)
@@ -108,8 +101,6 @@ public class PowerOn : MonoBehaviour
     public void PowerDisabled()
     {
         RenderSettings.fogDensity = 0.01f;
-        powerOn = false;
-        Debug.Log("PowerOn: " + powerOn);
 
         //Disable power control
         foreach (GameObject powerFeature in powerFeatures)

@@ -6,13 +6,10 @@ using UnityEngine.UI;
 public class FoodGrowth : MonoBehaviour
 {
     [SerializeField] Slider[] progressBars = null;
-    [SerializeField] Button button = null;
     [SerializeField] GameObject[] food = null;
     [SerializeField] Transform[] foodSpawn = null;
 
     [SerializeField] SceneScript scene = null;
-
-    
 
     private bool power = false;
     void Update()
@@ -28,8 +25,7 @@ public class FoodGrowth : MonoBehaviour
             }
         }
     
-
-            if (gameObject.activeSelf) power = true;
+        if (gameObject.activeSelf) power = true;
 
         if (power)
         {
@@ -37,8 +33,8 @@ public class FoodGrowth : MonoBehaviour
             progressBars[1].value += 0.00007f;
             progressBars[2].value += 0.00005f;
 
-            scene.powerLevel -= 0.005f;
-            Debug.Log("Food draining power by .001f");
+            scene.powerDisplay.value -= 0.0005f;
+            Debug.Log("Food draining power by .0005");
         }
 
         for(int i = 0; i < progressBars.Length; i++)
@@ -55,6 +51,7 @@ public class FoodGrowth : MonoBehaviour
         }
     }
 
+    //Method to turn on/off power when button pressed
     public void PowerSwitch()
     {
         power = !power;

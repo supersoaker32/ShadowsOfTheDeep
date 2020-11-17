@@ -11,9 +11,9 @@ public class SceneScript : MonoBehaviour
 
     //Power
     [SerializeField] PowerOn powerScript = null;
-    [SerializeField] Slider powerDisplay = null;
+    [SerializeField] public Slider powerDisplay = null;
+    [SerializeField] Volume powerVol = null;
     public bool power = false;
-    public float powerLevel;
     public float lightLevel = 0;
 
     //HUD
@@ -21,21 +21,21 @@ public class SceneScript : MonoBehaviour
     public Slider hungerDisplay = null;
     public Slider thirstDisplay = null;
 
-    //Inventory
-
-    void Start()
+    void Awake()
     {
         RenderSettings.fog = true;
         RenderSettings.fogDensity = 0.01f;
         atmosphereSound.Play();
-        powerLevel = 0f;
+        powerDisplay.value = 100.0f;
         insanityDisplay.value = 0;
         hungerDisplay.value = 100;
-        if (Application.isEditor)
-        {
-            Debug.Log("Debug mode is enabled");
-            powerScript.devMode = true;
-        }
+        thirstDisplay.value = 100;
+        powerVol.enabled = true;
+        powerVol.weight = 0;
+        power = false;
+        powerScript.PowerDisabled();
+
+        if (Application.isEditor) Debug.Log("Debug mode is enabled");
     }
 
     private void Update()
@@ -48,7 +48,7 @@ public class SceneScript : MonoBehaviour
                 powerScript.PowerEnabled();
 
                 Debug.Log("Power enabled and full");
-                powerLevel = 100f;
+                powerDisplay.value = 100f;
                 power = true;
             }
 
@@ -57,7 +57,7 @@ public class SceneScript : MonoBehaviour
                 powerScript.PowerDisabled();
 
                 Debug.Log("Power disabled and empty");
-                powerLevel = 0f;
+                powerDisplay.value = 0f;
                 power = false;
             }
 
@@ -66,6 +66,7 @@ public class SceneScript : MonoBehaviour
                 Debug.Log("Insanity reset to 0");
                 insanityDisplay.value = 0;
             }
+
             if (Input.GetKeyDown(KeyCode.Alpha0))
             {
                 Debug.Log("Insanity set to max");
@@ -73,44 +74,42 @@ public class SceneScript : MonoBehaviour
             }
         }
 
-            //Jumpscare only happens when power is initially turned on, adjusting power variable here
-            if (powerScript.jumpscare) power = true;
-
         //If power is on, reduce power as time continues
-        if (powerScript.powerOn && powerLevel > 0)
+        if (power && powerDisplay.value > 0)
         {
             powerDisplay.enabled = true;
-            if (power)
-            {
-                powerLevel -= 0.01f;
-                Debug.Log("Power level drained by .01 from ambient power usage");
-            }
-            else
-            {
-                powerLevel += 0.008f;
-                Debug.Log("Power level increased by .008 from no power usage");
-            }
+            powerDisplay.value -= 0.01f;
+            Debug.Log("Power level drained by .01 from ambient power usage");
+            powerVol.weight = 0;
         }
         else
         {
             powerDisplay.enabled = false;
         }
-        powerDisplay.value = powerLevel;
 
         //Turn off power if no power
-        if (powerLevel <= 0)
+        if (powerDisplay.value <= 0)
         {
             power = false;
             powerScript.PowerDisabled();
+        }
+
+        if(!power)
+        {
+            powerDisplay.value += 0.01f;
+            Debug.Log("Power level increased by .008 from no power usage");
+            powerVol.weight = 1;
         }
 
         //Increase insanity over time
         insanityDisplay.value += 0.0005f;
         Debug.Log("Insanity increased by .0005 from being alone");
 
+        //Constantly reduce hunger
         hungerDisplay.value -= 0.0015f;
         Debug.Log("Hunger decreased by .0015 from ambience");
-
+        
+        //Constantly reduce thirst
         thirstDisplay.value -= 0.003f;
         Debug.Log("Thirst decreased by .003 from ambience");
     }
