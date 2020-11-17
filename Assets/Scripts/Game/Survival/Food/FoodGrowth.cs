@@ -29,12 +29,12 @@ public class FoodGrowth : MonoBehaviour
 
         if (power)
         {
-            progressBars[0].value += 0.00009f;
-            progressBars[1].value += 0.00007f;
-            progressBars[2].value += 0.00005f;
+            progressBars[0].value += 0.0001f;
+            progressBars[1].value += 0.00009f;
+            progressBars[2].value += 0.00008f;
 
-            scene.powerDisplay.value -= 0.0005f;
-            Debug.Log("Food draining power by .0005");
+            scene.powerDisplay.value -= 0.0001f;
+            Debug.Log("Food draining power by .0001");
         }
 
         for(int i = 0; i < progressBars.Length; i++)

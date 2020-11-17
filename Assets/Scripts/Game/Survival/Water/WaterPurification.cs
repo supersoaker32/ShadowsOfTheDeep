@@ -11,7 +11,7 @@ public class WaterPurification : MonoBehaviour
 
     [SerializeField] SceneScript scene = null;
 
-    private float powerConsumption = .005f;
+    private float powerConsumption = .0001f;
 
     private bool power = false;
     void Update()
@@ -32,9 +32,9 @@ public class WaterPurification : MonoBehaviour
 
         if (power)
         {
-            progressBars[0].value += 0.00009f;
-            progressBars[1].value += 0.00009f;
-            progressBars[2].value += 0.00009f;
+            progressBars[0].value += 0.0001f;
+            progressBars[1].value += 0.0001f;
+            progressBars[2].value += 0.0001f;
 
             scene.powerDisplay.value -= powerConsumption;
             Debug.Log($"Water draining power by {powerConsumption}");

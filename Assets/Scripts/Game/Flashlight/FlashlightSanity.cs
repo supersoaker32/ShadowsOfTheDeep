@@ -53,8 +53,13 @@ public class FlashlightSanity : MonoBehaviour
 
         if (!flashlightOn)
         {
-            Debug.Log("Sanity decreased -.0002: flashlight off");
+            Debug.Log("Sanity decreased -0.0002: flashlight off");
             script.insanityDisplay.value -= 0.0002f;
+        }
+        else
+        {
+            Debug.Log("Sanity increased +0.0001: flashlight on");
+            script.insanityDisplay.value += 0.0001f;
         }
         if(battery != null)
         {

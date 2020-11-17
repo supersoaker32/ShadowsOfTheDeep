@@ -37,8 +37,8 @@ public class OxygenConverter : MonoBehaviour
         {
             //Increase by enough to counter constant drain and gain more
             oxygenBar.value += 0.0011f;
-            scene.powerDisplay.value -= 0.0005f;
-            Debug.Log("Air converter draining power by .0005");
+            scene.powerDisplay.value -= 0.0001f;
+            Debug.Log("Air converter draining power by .0001");
         }
     }
 

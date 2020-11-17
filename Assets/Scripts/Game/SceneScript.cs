@@ -31,7 +31,7 @@ public class SceneScript : MonoBehaviour
         hungerDisplay.value = 100;
         thirstDisplay.value = 100;
         powerVol.enabled = true;
-        powerVol.weight = 0;
+        powerVol.weight = 1;
         power = false;
         powerScript.PowerDisabled();
 
